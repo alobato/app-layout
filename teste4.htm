@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>jgmrjp: People</title>
+
+<style>
+	
+/*
+http://www.dave-woods.co.uk/index.php/min-and-max-width-3-column-fluid-css-layout/
+http://perishablepress.com/press/2007/01/16/maximum-and-minimum-height-and-width-in-internet-explorer/
+*/
+	
+/*-------------------------------------------------
+PAGE BODY
+-------------------------------------------------*/
+
+body {
+    margin: 0 auto;
+    font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+}
+
+html, body {
+    background: #E5E5E5;
+}
+
+a.image img {
+    border: none;
+}
+
+/*-------------------------------------------------
+HEADER
+-------------------------------------------------*/
+
+#Header {
+    padding: 1px 0 0 0;
+    background-color:#C5E2E9;
+	
+	width: expression( document.body.clientWidth < 834 ? "833px" : "auto" ); /* set min-width for IE */
+	min-width: 833px; /* sets min-width value for all standards-compliant browsers */
+}	
+
+#Header h1 /* client name */ {
+	padding: 0 0 10px 0;
+	margin: 0 0 0 30px;
+
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#Header h3 {
+	padding: 7px 20px 7px 25px;
+	margin: 0;
+	float: right;
+	text-align: right;
+	width: 300px;
+
+	font-size: 10px;
+	font-weight: normal;
+}
+
+#Header h3 a {
+	padding: 7px;
+}
+
+/*-------------------------------------------------
+TABS
+-------------------------------------------------*/
+
+#Tabs {
+	margin: 0 57px 0 30px;
+	height: 25px;
+}
+
+#Tabs ul {
+	margin: 0;
+	padding: 0;
+}
+
+#Tabs li {
+	display: inline;
+	list-style: none;
+	line-height: 13px;
+}
+
+#Tabs ul li a:link, #Tabs ul li a:visited {
+	float: left; /* for IE6 */
+	padding: 4px 8px 6px 8px;
+
+	font-size: 12px;
+	text-decoration: none;
+	background-color: #42577B;
+	border: 1px solid;
+	border-color: #C5E2E9 #C5E2E9 #42577B #C5E2E9;
+	color: #FFF;
+}
+
+#Tabs ul li a:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+#Tabs ul li a:link.current, #Tabs ul li a:visited.current {
+	background-color: #e5e5e5;
+	border: 1px solid;
+	border-color: #e5e5e5 #C5E2E9 #e5e5e5 #C5E2E9;
+	color: #222;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
+
+div#print_button {
+	float: right;
+	width: 50px;
+	padding-top: 3px;
+	height: 1%;
+}
+
+
+
+
+
+
+
+#Wrapper {
+	margin: 0pt auto;
+	padding: 12px 23px 0pt 30px;
+	
+}
+
+
+
+
+
+#container {
+font-size: 0.8em;
+margin: 0 auto;
+padding: 20px;
+overflow: hidden;
+min-width: 800px;
+max-width: 1000px;
+}
+
+* html #container {
+width:expression(((document.compatMode &&
+document.compatMode=='CSS1Compat') ?
+document.documentElement.clientWidth :
+document.body.clientWidth)
+> 1100 ? "1000px" : (((document.compatMode &&
+document.compatMode=='CSS1Compat') ?
+document.documentElement.clientWidth :
+document.body.clientWidth) < 705 ? "700px" : "auto"));
+}
+
+#additional {
+float: right;
+width: 200px;
+padding: 10px;
+background-color: #99CC99;
+border: solid 1px #000;
+}
+
+#content {
+margin-left: 0px;
+border: solid 1px #000;
+padding: 10px;
+background-color: #FFF;
+margin-right: 242px;
+}
+
+
+</style>
+
+
+<div id="Header">
+	<h3>
+		Jonas Gomes
+		<span class="pipe">|</span><a href="/people/107929/edit" title="Review and edit your account information">My info</a><span class="pipe">|</span><a href="/logout" title="Log-out and clear the cookie off your machine">Log-out</a>
+		<a href="#" class="image" target="_blank"><img alt="Help" src="http://asset1.projectpath.com/images/helpbutton2.png?1217037504" align="absmiddle" height="16" width="32"></a>
+	</h3>
+	
+	<h1>jgmrjp</h1>
+	
+	<div id="print_button"><a href="#" class="image"><img alt="Printer" src="http://asset1.projectpath.com/images/printer.gif?1217037504"></a></div>
+	    
+	<div id="Tabs">
+		<ul>
+			<li><a href="/clients" title="A list of all your clients and projects">Dashboard</a></li>
+			<li><a href="/todos/responsibilities" title="View all to-dos for a specific person across all their projects">To-Dos</a></li>
+			<li><a href="/milestones/responsibilities" title="View all milestones for a specific person across all their projects">Milestones</a></li>
+			<li style="float: right;"><a href="/global/settings" title="Name/logo, Permissions, Appearance, File Uploads">Settings</a></li>
+			<li style="float: right;"><a href="/templates" title="View/add/delete To-Do list templates">Templates</a></li>
+			<li style="float: right;"><a href="/account" title="See/modify billing information and current plan">Account (Upgrade/Billing)</a></li>
+			<li style="float: right;"><a href="/search">Search</a></li>
+			<li style="float: right;"><a href="/companies" class="current" title="Add/modify contact information for everyone in your system">All People</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<div id="Wrapper">
+	
+	
+	
+	
+	
+	
+	
+<div id="container">
+
+<div id="additional">
+<p>Morbi convallis lectus a elit. Morbi augue. Aenean quis ipsum non dui interdum egestas. Suspendisse quis turpis. Suspendisse et sem in neque dictum hendrerit. Nulla pede.</p>
+</div>
+
+<div id="content">
+<h2>Page Content</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pulvinar eros eu diam. Quisque ut orci ut nunc lobortis aliquam. Praesent metus. Pellentesque luctus. Suspendisse nisl.</p>
+<p>Morbi convallis lectus a elit. Morbi augue. Aenean quis ipsum non dui interdum egestas. Suspendisse quis turpis. Suspendisse et sem in neque dictum hendrerit. Nulla pede.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pulvinar eros eu diam. Quisque ut orci ut nunc lobortis aliquam. Praesent metus. Pellentesque luctus. Suspendisse nisl.</p>
+</div>
+
+</div>
+
+	
+	
+	
+	
+</div>
+
+</body>
+
+
+
+
+</html>
